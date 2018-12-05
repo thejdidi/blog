@@ -1,11 +1,11 @@
- <div class="row">
-    <div class="col-xs-12">
-      <h2>Mes Posts</h2>
-      <ul class="list-group">
-        <!--<app-post-list-item></app-post-list-item>
-        <app-post-list-item></app-post-list-item>
-        <app-post-list-item></app-post-list-item>-->
-        <app-post-list-item *ngFor="let posttemp of posts" [post]="posttemp"></app-post-list-item>
-      </ul>
-    </div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Mes Posts</h2>
+    <ul class="list-group">
+      <app-post-list-item
+        *ngFor="let posttemp of posts"
+        [post]="posttemp"
+      ></app-post-list-item>
+    </ul>
   </div>
+</div>
